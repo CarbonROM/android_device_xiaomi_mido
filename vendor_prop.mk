@@ -118,6 +118,7 @@ media.msm8956hw=0 \
 media.stagefright.audio.sink=280 \
 media.stagefright.thumbnail.prefer_hw_codecs=true \
 mmp.enable.3g2=true \
+persist.mm.enable.prefetch=true \
 vendor.audio.hw.aac.encoder=true \
 vendor.mm.enable.qcom_parser=1048575 \
 vendor.vidc.dec.downscalar_height=1088 \
