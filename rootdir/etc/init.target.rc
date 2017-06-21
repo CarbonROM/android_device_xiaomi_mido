@@ -180,14 +180,14 @@ service ppd /vendor/bin/mm-pp-dpps
     socket pps stream 0660 system system
     disabled
 
-service vendor.folio_daemon /vendor/bin/folio_daemon
+service folio_daemon /system/bin/folio_daemon
     class late_start
     user system
     group system uhid
     disabled
 
 on property:init.svc.zygote=running
-    start vendor.folio_daemon
+    start folio_daemon
 
 on property:init.svc.zygote=stopped
-    stop vendor.folio_daemon
+    stop folio_daemon
