@@ -1,0 +1,4 @@
+{
+  "pushCert": "certificate version 0.1\npusher 0C77DC40 1523511051 +0000\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_device_xiaomi_mido\nnonce 1523511063-823E90B01D74E9B9132AFD9431F73C2238247821\n\n0000000000000000000000000000000000000000 c6d6466e78a33737048871444bc15fda496fc5db refs/for/cr-6.1\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niJwEAAECAAYFAlrO7wsACgkQk3r2Mwx33EAz9wP/cKU/+hO4WSKGMte2cOTgca2J\nOBRIj3zIvKCY7QcEAfM52kLnG+nS8AWQlT2JtU3NBF2AgHY74m5ax82CZVRbqyHt\n4KscAKeakc+24ofZ454pmEhLgHCKvvJc9cwA/s4ItxPif6IZVSE7dvt2W2fobrBt\n/SqHYror25U034elO1w\u003d\n\u003d+Laf\n-----END PGP SIGNATURE-----\n",
+  "comments": []
+}
