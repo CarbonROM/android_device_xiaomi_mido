@@ -1,0 +1,4 @@
+{
+  "pushCert": "certificate version 0.1\npusher xenreon \u003cmain.xenreon@gmail.com\u003e 1524383656 +0530\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_device_xiaomi_mido\nnonce 1524383670-42CEC7AA1166708089AFEE60728432457FC2C9C9\n\n0000000000000000000000000000000000000000 19e15e0709b66b15980f397f521119db921f7a00 refs/for/cr-6.1\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niQEcBAABAgAGBQJa3D+oAAoJEDeF3aHmD114V8cH/AzSkFtt2fNCORxUeHUBYN61\nkTkI8mujVHVorbrXQJABVU772AXaZ+rHgwmMgFUam7qMnjjcpEVpJII649LHHy97\nirrI9E/pQRakq9jh+couRq7JQ6mECHRYLUv7SAwVo/khJsv08oU3auuSf/F2lGXN\nffkK/LSfWREVWbZ0XPK9+FfAOcYl+0r+zQvIf8FxUke2ee2yHnA+/m25VE2z8FLR\nwIGlivsmClBinPJnGGnTr62Z2oSUE6he0fwojOtSJrbBbsAStA7AwfQzxBHZrEnW\n8OyZNca0hmv1DYpIJDzvn/eOc6r+bc/8boY4WM77U2YzT0yLBqCIpJ7dQY/U2VM\u003d\n\u003dsEoQ\n-----END PGP SIGNATURE-----\n",
+  "comments": []
+}
