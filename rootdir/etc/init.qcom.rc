@@ -100,6 +100,10 @@ on boot
     chown system system /sys/devices/soc/78b7000.i2c/i2c-3/3-0038/enable_dt2w
     chmod 0664 /sys/devices/soc/78b7000.i2c/i2c-3/3-0038/enable_dt2w
 
+    # Vibrator permissions
+    chown root system /sys/class/timed_output/vibrator/vtg_level
+    chmod 0660 /sys/class/timed_output/vibrator/vtg_level
+
     # This location is used by QCRIL to host UNIX domain
     # socket files used for internal IPC within QCRIL
     # modules
@@ -127,6 +131,12 @@ on boot
     write /proc/sys/kernel/printk "6 6 1 7"
 
     chown wifi wifi /sys/module/wlan/parameters/fwpath
+
+    # Flashlight
+    chown root system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness
+    chown root system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
 
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
