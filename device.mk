@@ -186,6 +186,10 @@ PRODUCT_PACKAGES += \
     libunwind \
     fakelogprint
 
+# FlipFlap
+PRODUCT_PACKAGES += \
+    FlipFlap
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
