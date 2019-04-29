@@ -1,4 +1,4 @@
-# Device Tree for Xiaomi Redmi Note 4 & 4x (Mido)
+# Device Tree for Xiaomi Redmi Note 4 & 4X (Mido)
 
 ## Spec Sheet
 
@@ -9,6 +9,8 @@
 | GPU                     | Adreno 506                        |
 | Memory                  | 3/4 GB                            |
 | Shipped Android Version | 6.0.1                             |
+| Latest Android Version  | 7.0.0                             |
+| Kernel Version          | 3.18                              |
 | Storage                 | 16/32/64 GB                       |
 | MicroSD                 | Up to 256 GB                      |
 | Battery                 | 4100 mAh (non-removable)          |
