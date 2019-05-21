@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.dirac;
+package org.carbonrom.settings.dirac;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -37,7 +37,7 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import org.lineageos.settings.R;
+import org.carbonrom.settings.R;
 
 public class DiracSettingsFragment extends PreferenceFragment implements
         OnPreferenceChangeListener, CompoundButton.OnCheckedChangeListener {
