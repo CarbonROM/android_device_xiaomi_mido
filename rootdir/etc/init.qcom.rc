@@ -165,10 +165,10 @@ on boot
 
 
     # Flashlight
-    chown root system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness
-    chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness
-    chown root system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
-    chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
+    chown root system /sys/class/leds/led:torch_0/max_brightness
+    chmod 0660 /sys/class/leds/led:torch_0/max_brightness
+    chown root system /sys/class/leds/led:torch_1/max_brightness
+    chmod 0660 /sys/class/leds/led:torch_1/max_brightness
 
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
