@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid 
+                android:color="@color/settings_background_icon_color" />
+            <size 
+                android:height="24dp" 
+                android:width="24dp" />
+        </shape>
+    </item>
+    <item 
+        android:drawable="@drawable/ic_mi" />
+</layer-list>
