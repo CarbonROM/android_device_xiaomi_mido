@@ -13,3 +13,7 @@ allow system_app proc_touchpanel:file rw_file_perms;
 allow system_app proc_touchpanel:dir search;
 allow system_app sysfs_kcal:dir search;
 allow system_app sysfs_kcal:file rw_file_perms;
+
+# Hall Switch
+allow system_app hall_dev:file rw_file_perms;
+allow system_app hall_dev:dir search;
