@@ -24,3 +24,6 @@ type sysfs_torch, fs_type, sysfs_type;
 
 # XiaomiParts kcal
 type sysfs_kcal, fs_type, sysfs_type;
+
+# Hall Switch
+type hall_dev, sysfs_type, fs_type;
