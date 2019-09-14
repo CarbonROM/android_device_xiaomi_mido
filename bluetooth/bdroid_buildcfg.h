@@ -17,6 +17,8 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
+#pragma push_macro("PROPERTY_VALUE_MAX")
+
 #include <cutils/properties.h>
 #include <string.h>
 
@@ -25,7 +27,7 @@ static inline const char* BtmGetDefaultName()
     return "Xiaomi Redmi Note 4";
 }
 
-#undef PROPERTY_VALUE_MAX
+#pragma pop_macro("PROPERTY_VALUE_MAX")
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 // Disables read remote device feature
