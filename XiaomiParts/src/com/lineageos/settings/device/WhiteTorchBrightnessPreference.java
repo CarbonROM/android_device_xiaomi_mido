@@ -19,8 +19,8 @@ package com.lineageos.settings.device;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.v7.preference.PreferenceManager;
-import android.support.v7.preference.PreferenceViewHolder;
+import androidx.preference.PreferenceManager;
+import androidx.preference.PreferenceViewHolder;
 import android.util.AttributeSet;
 
 import java.util.List;
