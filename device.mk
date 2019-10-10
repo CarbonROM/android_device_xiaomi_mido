@@ -128,8 +128,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     camera.msm8953 \
-    libmm-qcamera \
-    Snap
+    libmm-qcamera
+#    Snap
 
 # Consumerir
 PRODUCT_PACKAGES += \
@@ -140,8 +140,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
 #Dirac
-PRODUCT_PACKAGES += \
-     Dirac
+#PRODUCT_PACKAGES += \
+#     Dirac
 
 # Display
 PRODUCT_PACKAGES += \
@@ -163,12 +163,12 @@ PRODUCT_PACKAGES += \
     libtinyxml
 
 # Doze mode
-PRODUCT_PACKAGES += \
-    XiaomiDoze
+#PRODUCT_PACKAGES += \
+#    XiaomiDoze
 
 # XiaomiParts
-PRODUCT_PACKAGES += \
-    XiaomiParts
+#PRODUCT_PACKAGES += \
+#    XiaomiParts
 
 # DRM
 PRODUCT_PACKAGES += \
