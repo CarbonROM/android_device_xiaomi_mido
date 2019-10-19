@@ -77,7 +77,7 @@ vendor/firmware/cpp_firmware_v1_1_6.fw|6b2c9fe0a43a9ce86a921e18faffe4d0a35746ee
 # Camera effects - from MIUI Camera by KudProject
 lib/libjni_blurbuster.so|fedd33b35ddaa645f4edd61378b37c0542fe1da9
 lib/libjni_chromaflash.so|fa4c0a5952cdec6459669bd591d35576f7a2d951
-lib/libjni_sharpshooter.so|9adfd9b3b084db7a2cee3c6f28681c422456e10
+lib/libjni_sharpshooter.so|9adfd9b3b084db7a2cee3c6f28681c422456e101
 
 # Charger - from Tissot PKQ1.180917.001.V10.0.11.0.PDHMIXM
 vendor/bin/hvdcp_opti|7ee82dd264c7c349fb498111a61d5009ae9f0da2
@@ -618,7 +618,7 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|ee831dc9bd07c33882390761742c7881e68689f9
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|6481fad7709b890ca8b854bbc7f876ce63b9ea72
 
-# Wi-Fi - from Tissot PKQ1.180917.001.V10.0.11.0.PDHMIXM
+# Wi-Fi - from Tissot PKQ1.180917.001.V10.0.13.0.PDHMIXM
 vendor/bin/wcnss_service|f8ecd38a41b6b7f832380b489e0c9804c34174d8
 vendor/firmware/wlan/prima/WCNSS_cfg.dat|1672af1c3d4f04804f31d4b79a6e59ea4a8b1926
 vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin|5e97baa4957609519835074071c879fbaf462266
