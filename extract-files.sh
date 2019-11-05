@@ -78,4 +78,11 @@ if [ -s "$MY_DIR"/proprietary-files.txt ]; then
          "$DEVICE_BLOB_ROOT"/vendor/bin/mm-qcamera-daemon
 fi
 
+patchelf --remove-needed libbacktrace.so "$DEVICE_BLOB_ROOT"/vendor/bin/gx_fpd
+patchelf --remove-needed libunwind.so "$DEVICE_BLOB_ROOT"/vendor/bin/gx_fpd
+patchelf --remove-needed libkeystore_binder.so "$DEVICE_BLOB_ROOT"/vendor/bin/gx_fpd
+patchelf --remove-needed libsoftkeymasterdevice.so "$DEVICE_BLOB_ROOT"/vendor/bin/gx_fpd
+patchelf --remove-needed libsoftkeymaster.so "$DEVICE_BLOB_ROOT"/vendor/bin/gx_fpd
+patchelf --remove-needed libkeymaster_messages.so "$DEVICE_BLOB_ROOT"/vendor/bin/gx_fpd
+
 "$MY_DIR"/setup-makefiles.sh
