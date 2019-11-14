@@ -54,7 +54,7 @@ public class DeviceSettings extends PreferenceFragment implements
     private WhiteTorchBrightnessPreference mWhiteTorchBrightness;
     private TwoStatePreference mGloveMode;
 
-    private static final String GLOVE_MODE_FILE = "/sys/devices/virtual/tp_glove/device/glove_enable";
+    private static final String GLOVE_MODE_FILE = "/sys/class/tp_glove/device/glove_enable";
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
