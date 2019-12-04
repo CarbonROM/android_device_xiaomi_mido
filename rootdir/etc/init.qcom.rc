@@ -141,6 +141,7 @@ on boot
     chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness
     chown root system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
     chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
+    write /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness 0
 
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
