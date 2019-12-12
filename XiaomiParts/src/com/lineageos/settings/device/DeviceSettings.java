@@ -48,13 +48,16 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String KEY_YELLOW_TORCH_BRIGHTNESS = "yellow_torch_brightness";
     public static final String KEY_WHITE_TORCH_BRIGHTNESS = "white_torch_brightness";
     public static final String KEY_GLOVE_MODE = "glove_mode";
+    public static final String KEY_HALL_WAKEUP = "hall";
 
     private VibratorStrengthPreference mVibratorStrength;
     private YellowTorchBrightnessPreference mYellowTorchBrightness;
     private WhiteTorchBrightnessPreference mWhiteTorchBrightness;
     private TwoStatePreference mGloveMode;
+    private TwoStatePreference mHallWakeup;
 
     private static final String GLOVE_MODE_FILE = "/sys/devices/virtual/tp_glove/device/glove_enable";
+    private static final String HALL_WAKEUP_PROP = "vendor.persist.hall_wakeup";
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -88,11 +91,18 @@ public class DeviceSettings extends PreferenceFragment implements
         mGloveMode = (TwoStatePreference) findPreference(KEY_GLOVE_MODE);
         mGloveMode.setChecked(PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean(DeviceSettings.KEY_GLOVE_MODE, false));
         mGloveMode.setOnPreferenceChangeListener(this);
+
+        mHallWakeup = (TwoStatePreference) findPreference(KEY_HALL_WAKEUP);
+        mHallWakeup.setChecked(PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean(DeviceSettings.KEY_HALL_WAKEUP, false));
+        mHallWakeup.setOnPreferenceChangeListener(this);
     }
 
     public static void restore(Context context) {
         boolean gloveModeData = PreferenceManager.getDefaultSharedPreferences(context).getBoolean(DeviceSettings.KEY_GLOVE_MODE, false);
         Utils.writeValue(GLOVE_MODE_FILE, gloveModeData ? "1" : "0");
+
+        boolean hallWakeupData = PreferenceManager.getDefaultSharedPreferences(context).getBoolean(DeviceSettings.KEY_HALL_WAKEUP, false);
+        Utils.setProp(HALL_WAKEUP_PROP, hallWakeupData);
     }
 
     @Override
@@ -107,6 +117,12 @@ public class DeviceSettings extends PreferenceFragment implements
             SharedPreferences.Editor prefChange = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
             prefChange.putBoolean(KEY_GLOVE_MODE, enabled).commit();
             Utils.writeValue(GLOVE_MODE_FILE, enabled ? "1" : "0");
+        }
+        if (preference == mHallWakeup) {
+            boolean enabled = (boolean) newValue;
+            SharedPreferences.Editor prefChange = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
+            prefChange.putBoolean(KEY_HALL_WAKEUP, enabled).commit();
+            Utils.setProp(HALL_WAKEUP_PROP, enabled);
         }
         return true;
     }

@@ -53,4 +53,9 @@
     <string name="warm_amoled">Warm Amoled</string>
     <string name="hybrid_mamba">Hybrid Mamba</string>
     <string name="quick_settings_reading_mode">Reading mode</string>
+
+    <!-- Hall wakeup -->
+    <string name="hall_wakeup_title">Flip Cover Wakeup</string>
+    <string name="hall_title">Enable Flip Cover Wakeup</string>
+    <string name="hall_wakeup_summary">Wakeup device via magnetic Flip Cover</string>
 </resources>
