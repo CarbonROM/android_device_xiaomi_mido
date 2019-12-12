@@ -17,6 +17,8 @@
 */
 package com.lineageos.settings.device;
 
+import android.os.SystemProperties;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -100,5 +102,13 @@ public class Utils {
             return fileValue;
         }
         return defValue;
+    }
+
+    static void setProp(String prop, boolean value) {
+        if (value) {
+            SystemProperties.set(prop, "1");
+        } else {
+            SystemProperties.set(prop, "0");
+        }
     }
 }
