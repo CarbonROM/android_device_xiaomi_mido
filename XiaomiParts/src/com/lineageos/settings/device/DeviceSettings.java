@@ -57,7 +57,7 @@ public class DeviceSettings extends PreferenceFragment implements
     private TwoStatePreference mHallWakeup;
 
     private static final String GLOVE_MODE_FILE = "/sys/devices/virtual/tp_glove/device/glove_enable";
-    private static final String HALL_WAKEUP_PROP = "vendor.persist.hall_wakeup";
+    private static final String HALL_WAKEUP_PROP = "persist.service.folio_daemon";
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
