@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.lineageos.settings.device"
     android:sharedUserId="android.uid.system" >
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -14,7 +15,9 @@
     <application
         android:label="@string/advanced_settings"
         android:theme="@style/AppTheme"
-        android:supportsRtl="true" >
+        android:supportsRtl="true"
+	tools:replace="android:appComponentFactory"
+	android:appComponentFactory="android.support.v4.app.CoreComponentFactory" >
         <activity
             android:name="com.lineageos.settings.device.DeviceSettingsActivity"
             android:exported="false"
