@@ -8,5 +8,17 @@
  {
    "repository": "CarbonROM/android_kernel_xiaomi_mido",
    "target_path": "kernel/xiaomi/mido"
+ },
+ {
+   "remote": "lineage",
+   "repository": "LineageOS/android_packages_apps_FMRadio",
+   "target_path": "packages/apps/FMRadio",
+   "revision": "lineage-18.1"
+ },
+ {
+   "remote": "lineage",
+   "repository": "LineageOS/android_vendor_qcom_opensource_fm-commonsys",
+   "target_path": "vendor/qcom/opensource/fm-commonsys",
+   "revision": "lineage-18.1"
  }
 ]
