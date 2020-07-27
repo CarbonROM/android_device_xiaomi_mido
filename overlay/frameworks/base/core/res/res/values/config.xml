@@ -634,4 +634,7 @@
     <!-- Whether device needs to wait for Qualcomm MPCTL service to start
          before setting power profiles on boot. -->
     <bool name="config_waitForMpctlOnBoot">true</bool>
+
+    <!-- Button brightness -->
+    <bool name="config_button_brightness_support">true</bool>
 </resources>
