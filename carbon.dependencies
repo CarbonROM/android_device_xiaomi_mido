@@ -1,0 +1,12 @@
+[
+ {
+   "remote": "lineage",
+   "repository": "LineageOS/android_packages_resources_devicesettings",
+   "target_path": "packages/resources/devicesettings",
+   "revision": "lineage-17.1"
+ },
+ {
+   "repository": "android_kernel_xiaomi_mido",
+   "target_path": "kernel/xiaomi/mido"
+ }
+]
