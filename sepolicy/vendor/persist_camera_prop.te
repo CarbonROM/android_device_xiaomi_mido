@@ -1,0 +1,1 @@
+allow persist_camera_prop snap_app:persist_camera_prop read;
