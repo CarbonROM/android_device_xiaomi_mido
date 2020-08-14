@@ -785,12 +785,12 @@ vendor/lib64/libwvhidl.so|4af61fdcf1186700ea7ee23c607fb9ce5fd0f0e8
 
 # Fingerprint
 bin/gx_fpd:vendor/bin/gx_fpd
-lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.so
+lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.so|1347ed91b6ead0760c8f3426b8d4fd05b39d30f1
 lib64/hw/fingerprint.searchf.so:vendor/lib64/hw/fingerprint.searchf.so|bf6fce6739ba843b93d2bf04c9fd69f33b4815c0
 lib64/hw/gxfingerprint.default.so:vendor/lib64/hw/gxfingerprint.default.so|21120610203e3e94a95610702a6f8f9f82535a69
-lib64/libfp_client.so:vendor/lib64/libfp_client.so
+lib64/libfp_client.so:vendor/lib64/libfp_client.so|9c19d442699284ca89c0ce3af6c903146ad6fecc
 lib64/libfpnav.so:vendor/lib64/libfpnav.so
-lib64/libfpservice.so:vendor/lib64/libfpservice.so
+lib64/libfpservice.so:vendor/lib64/libfpservice.so|4ddd8ce6cd540ccd4b2a6be46fd3c88d406e94c6
 
 # FM Radio - from LA.UM.8.6.r1-04400-89xx.0
 vendor/bin/fm_qsoc_patches|82ab33e928933b8077e77c1532a58b61a3551932
