@@ -63,7 +63,13 @@ public class DiracSettingsFragment extends PreferenceFragment implements
 
         mDiracUtils = new DiracUtils(getContext());
 
-        boolean enhancerEnabled = mDiracUtils.isDiracEnabled();
+        boolean enhancerEnabled;
+        try {
+            enhancerEnabled = DiracService.sDiracUtils.isDiracEnabled();
+        } catch (java.lang.NullPointerException e) {
+            getContext().startService(new Intent(getContext(), DiracService.class));
+            enhancerEnabled = DiracService.sDiracUtils.isDiracEnabled();
+        }
 
         mHeadsetType = (ListPreference) findPreference(PREF_HEADSET);
         mHeadsetType.setOnPreferenceChangeListener(this);
