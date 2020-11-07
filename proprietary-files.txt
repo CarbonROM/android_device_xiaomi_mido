@@ -792,6 +792,29 @@ vendor/bin/hw/android.hardware.drm@1.2-service.widevine|b626d9bbf7043c66c8ef903c
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|75335443a33a06a03eecfa714dfe9f1c0c4df2b1
 vendor/lib64/libwvhidl.so|4af61fdcf1186700ea7ee23c607fb9ce5fd0f0e8
 
+# DRM - from deen
+vendor/lib/liboemcrypto.so
+vendor/lib64/liboemcrypto.so
+vendor/firmware/cppf.b00
+vendor/firmware/cppf.b01
+vendor/firmware/cppf.b02
+vendor/firmware/cppf.b03
+vendor/firmware/cppf.b04
+vendor/firmware/cppf.b05
+vendor/firmware/cppf.b06
+vendor/firmware/cppf.mdt
+vendor/firmware/widevine.b00
+vendor/firmware/widevine.b01
+vendor/firmware/widevine.b02
+vendor/firmware/widevine.b03
+vendor/firmware/widevine.b04
+vendor/firmware/widevine.b05
+vendor/firmware/widevine.b06
+vendor/firmware/widevine.mdt
+
+# DRM - Widevine - from deen
+vendor/lib/libcppf.so
+
 # Fingerprint
 bin/gx_fpd:vendor/bin/gx_fpd
 lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.so|1347ed91b6ead0760c8f3426b8d4fd05b39d30f1
