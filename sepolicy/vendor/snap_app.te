@@ -1,1 +1,2 @@
 get_prop(appdomain, camera_prop)
+allow persist_camera_prop persist_camera_prop:file read;
