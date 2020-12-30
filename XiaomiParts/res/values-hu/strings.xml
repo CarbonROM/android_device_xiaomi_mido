@@ -25,4 +25,5 @@
     <string name="yellow_torch_brightness_summary_head">A sárga LED maximális fényerejének beállítása</string>
     <string name="white_torch_brightness_title_head">Fehér LED maximális fényerő</string>
     <string name="white_torch_brightness_summary_head">A fehér LED maximális fényerejének beállítása</string>
+    <string name="quick_settings_reading_mode">Olvasómód</string>
 </resources>
