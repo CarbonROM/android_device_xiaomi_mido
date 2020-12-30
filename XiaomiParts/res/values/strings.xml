@@ -52,4 +52,5 @@
     <string name="extreme_amoled">Extreme Amoled</string>
     <string name="warm_amoled">Warm Amoled</string>
     <string name="hybrid_mamba">Hybrid Mamba</string>
+    <string name="quick_settings_reading_mode">Reading mode</string>
 </resources>
