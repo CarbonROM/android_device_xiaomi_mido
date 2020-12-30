@@ -25,4 +25,5 @@
     <string name="yellow_torch_brightness_summary_head">Définir la luminosité maximale de la led jaune</string>
     <string name="white_torch_brightness_title_head">Luminosité maximale de la led blanche</string>
     <string name="white_torch_brightness_summary_head">Définir la luminosité maximale de la led blanche</string>
+    <string name="quick_settings_reading_mode">Mode Lecture</string>
 </resources>
