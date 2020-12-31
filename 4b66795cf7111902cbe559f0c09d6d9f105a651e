@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "45487369_d4b6b658",
+        "filename": "XiaomiParts/src/com/lineageos/settings/device/GrayTileService.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 385
+      },
+      "writtenOn": "2020-12-31T09:28:21Z",
+      "side": 1,
+      "message": "public -\u003e private",
+      "revId": "4b66795cf7111902cbe559f0c09d6d9f105a651e",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": true
+    }
+  ]
+}
