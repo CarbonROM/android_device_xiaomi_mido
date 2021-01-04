@@ -15,6 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
+
 package com.lineageos.settings.device;
 
 import android.content.Context;
@@ -27,28 +28,25 @@ import android.preference.SwitchPreference;
 import android.preference.ListPreference;
 import android.view.MenuItem;
 import android.widget.ImageView;
-import android.widget.SeekBar;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 
-import android.app.ActionBar;
 import com.lineageos.settings.device.utils.SeekBarPreference;
-import com.lineageos.settings.device.R;
 
 public class DisplayCalibration extends PreferenceActivity implements
         OnPreferenceChangeListener {
 
-    public static final String KEY_KCAL_ENABLED = "kcal_enabled";
-    public static final String KEY_KCAL_RED = "kcal_red";
-    public static final String KEY_KCAL_GREEN = "kcal_green";
-    public static final String KEY_KCAL_BLUE = "kcal_blue";
-    public static final String KEY_KCAL_SATURATION = "kcal_saturation";
-    public static final String KEY_KCAL_CONTRAST = "kcal_contrast";
-    public static final String KEY_KCAL_VALUE = "kcal_value";
-    public static final String KEY_KCAL_HUE = "kcal_hue";
-    public static final String KEY_KCAL_GREYSCALE = "kcal_greyscale";
-    public static final String KEY_KCAL_PRESETS_LIST = "presets_list";
+    private static final String KEY_KCAL_ENABLED = "kcal_enabled";
+    private static final String KEY_KCAL_RED = "kcal_red";
+    private static final String KEY_KCAL_GREEN = "kcal_green";
+    private static final String KEY_KCAL_BLUE = "kcal_blue";
+    private static final String KEY_KCAL_SATURATION = "kcal_saturation";
+    private static final String KEY_KCAL_CONTRAST = "kcal_contrast";
+    private static final String KEY_KCAL_VALUE = "kcal_value";
+    private static final String KEY_KCAL_HUE = "kcal_hue";
+    private static final String KEY_KCAL_GREYSCALE = "kcal_greyscale";
+    private static final String KEY_KCAL_PRESETS_LIST = "presets_list";
 
     private SeekBarPreference mKcalRed;
     private SeekBarPreference mKcalBlue;
@@ -61,7 +59,6 @@ public class DisplayCalibration extends PreferenceActivity implements
     private SwitchPreference mKcalEnabled;
     private SwitchPreference mKcalGreyscale;
     private ListPreference mKcalPresetsListPreference;
-    private boolean mEnabled;
 
     private String mRed;
     private String mBlue;
@@ -285,7 +282,7 @@ public class DisplayCalibration extends PreferenceActivity implements
             String mContrast = String.valueOf(mPrefs.getInt(KEY_KCAL_CONTRAST, 255));
             String mValue = String.valueOf(mPrefs.getInt(KEY_KCAL_VALUE, 255));
             String mHue = String.valueOf(mPrefs.getInt(KEY_KCAL_HUE, 0));
-            Boolean mGreyscale = mPrefs.getBoolean(DisplayCalibration.KEY_KCAL_GREYSCALE, false);
+            boolean mGreyscale = mPrefs.getBoolean(DisplayCalibration.KEY_KCAL_GREYSCALE, false);
             Utils.writeValue(COLOR_FILE_ENABLE, enabled ? "1" : "0");
             Utils.writeValue(COLOR_FILE, storedValue);
             Utils.writeValue(COLOR_FILE_SATURATION, mGreyscale ? "128" : mSaturation);
