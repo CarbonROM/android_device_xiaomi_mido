@@ -179,7 +179,7 @@ service folio_daemon /system/bin/folio_daemon
     disabled
 
 on property:init.svc.zygote=running
-    start vendor.folio_daemon
+    start folio_daemon
 
 on property:init.svc.zygote=stopped
-    stop vendor.folio_daemon
+    stop folio_daemon
