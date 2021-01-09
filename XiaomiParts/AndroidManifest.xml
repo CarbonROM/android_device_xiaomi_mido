@@ -74,5 +74,15 @@
             </intent-filter>
         </service>
 
+        <service
+            android:name=".HallTileService"
+            android:icon="@drawable/ic_flip"
+            android:label="@string/hall_wakeup_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
     </application>
 </manifest>
