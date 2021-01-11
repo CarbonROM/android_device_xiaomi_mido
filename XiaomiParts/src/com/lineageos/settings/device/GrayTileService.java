@@ -33,11 +33,7 @@ public class GrayTileService extends TileService {
                 getDefaultSharedPreferences(this).getBoolean(KEY_KCAL_GREYSCALE, false);
 
         Tile tile = getQsTile();
-        if (storedGreyscale) {
-            tile.setState(Tile.STATE_ACTIVE);
-        } else {
-            tile.setState(Tile.STATE_INACTIVE);
-        }
+        tile.setState(storedGreyscale ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
 
         tile.updateTile();
         super.onStartListening();
