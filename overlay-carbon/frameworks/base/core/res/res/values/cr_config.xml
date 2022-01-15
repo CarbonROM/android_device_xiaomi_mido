@@ -19,11 +19,23 @@
         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
     </string-array>
 
-    <!-- Battery life saver -->
-    <!-- Disable this if your device does not support input_suspend or charging_enabled -->
-    <bool name="config_deviceHasBatteryLifeSaver">true</bool>
-    <!-- Use /sys/class/power_supply/battery/charging_enabled with inverted values for old devices-->
-    <string name="config_batteryLifeSaverSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
-    <string name="config_batteryLifeSaverSysfsNodeStopValue" translatable="false">0</string>
-    <string name="config_batteryLifeSaverSysfsNodeStartValue" translatable="false">1</string>
+    <!-- Default value for proximity check on screen wake
+     NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
+    <bool name="config_proximityCheckOnWake">true</bool>
+    <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+
+    <!-- Whether to cleanup fingerprints upon connection to the daemon and when
+         user switches -->
+    <bool name="config_cleanupUnusedFingerprints">false</bool>
+
+    <!-- Whether to post reset runnable for all clients. Needed for some older
+         vendor fingerprint HAL implementations. -->
+    <bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
+
+    <!-- Button backlight control. Possible values are:
+            0 - Not supported
+            1 - Supported, but only on/off mode
+            2 - Supported with variable brightness control
+    -->
+    <integer name="config_deviceSupportsButtonBrightnessControl">1</integer>
 </resources>
