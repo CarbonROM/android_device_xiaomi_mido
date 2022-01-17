@@ -23,8 +23,6 @@
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
@@ -58,17 +56,6 @@
                        android:resource="@string/dirac_summary" />
         </activity>
  
-        <activity
-            android:name=".soundcontrol.SoundControlSettingsActivity"
-            android:exported="false"
-            android:label="@string/advanced_settings">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.sound" />
-        </activity>
-
         <activity
             android:name=".torch.TorchSettingsActivity"
             android:exported="false"
