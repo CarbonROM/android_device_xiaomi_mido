@@ -25,7 +25,7 @@
             android:defaultValue="100"
             android:key="white_torch_brightness"
             android:max="255"
-            app:min="1"
+            app:min="0"
             android:icon="@drawable/ic_torch"
             android:title="@string/white_torch_brightness_title" />
 	
@@ -33,7 +33,7 @@
             android:defaultValue="100"
             android:key="yellow_torch_brightness"
             android:max="255"
-            app:min="1"
+            app:min="0"
             android:icon="@drawable/ic_torch"
             android:title="@string/yellow_torch_brightness_title" />
 
