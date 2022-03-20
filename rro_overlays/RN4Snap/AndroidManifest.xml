@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 CarbonROM
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.lineageos.snap.mido">
+
+    <overlay
+        android:requiredSystemPropertyName="persist.camera.HAL3.enabled"
+        android:requiredSystemPropertyValue="1"
+        android:isStatic="true"
+        android:priority="800"
+        android:targetPackage="org.lineageos.snap" />
+</manifest>
