@@ -7,5 +7,5 @@ allow mm-qcamerad system_server:unix_stream_socket { read write };
 
 allow mm-qcamerad diag_device:chr_file { ioctl open read write };
 
-allow mm-qcamerad camera_prop:file { read open };
+allow mm-qcamerad camera_prop:file { read open getattr };
 allow mm-qcamerad property_socket:sock_file { write };
