@@ -1,4 +1,5 @@
 {
   "pushCert": "certificate version 0.1\npusher xenreon \u003cmain.xenreon@gmail.com\u003e 1530812299 +0530\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_device_xiaomi_mido\nnonce 1530812299-7B6FFD207BD2317CBA7EC7F1244252D85D4B7B4D\n\n0000000000000000000000000000000000000000 e366e7d4dfa1b33a5d090e38a56535baef15d51c refs/for/cr-6.1\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niQIcBAABAgAGBQJbPleLAAoJEI3eqicOcXxmdYUQALDEya7GdJZaPqfM8XKWnMlk\n+gGpmeLV1YjrnWSDKnVGcjUxzITfdrNboppv4+YsGt/HByJX4jJltuVatoEHS1Wd\nQH/SX4vHwO1gUyfdQ8CYnLjl4GNZ9tim2nDw0OToLZJqs/dREgmR7Qxv7+Ie30J+\nCPVY33ntiFTiLbw1g4ly2ZKfrFC6vLVPGcHb7HCP/WbjmHu5rmhyMLGzjXWWI4bJ\nDi4dIpRExfWa0Gk5GPF6HHAT1JHrsHBpF+9f6lswXzLtG985Cp3RRsxzaOov8AtO\nx2g/JmgnkviNJDBIrMeATqQQKwZV+HlIHugfTyZ0MYsA/EZY/AE4ih9wwDQcDwvG\nWnLqmlcTivtefuEm2qR2txLMSlpnTYLjEy+tY45GwsIuo0Hfum/k6ZkZmNI3mp0v\nNmPieKR+ltgFrTxJ0Am4w5PosCqUW3sMmBDo+3FQf68MfrFTWVTIhRIFFJmRS4hP\nEFFBvhsznzh/A7mTMNZ+2g7gT8pq9UXHDlybwAXMdjXRR+r4rKK3eSWtpulCHbLJ\nl5Qw6rveXPTH4pWHqMkcOl7msUuhCaEXmY9jSzJUbkfi/aq/BkcGVmT+FhHJ8MLU\ncM60pm1e5m5eLBrvdDXQT4MNAgQAEwYoGTbN4v/nWcIm/bLuS5LPRr4Vrak7c3wO\niLAZqMNmQ7FkG6QY+weE\n\u003dXoNm\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [],
+  "submitRequirementResults": []
 }
